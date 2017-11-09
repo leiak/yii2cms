@@ -23,29 +23,37 @@ return [
             //         'idField' => 'user_id'
             //     ]
             // ],
-            'menus' => [
-                'assignment' => [
-                    'label' => 'Grand Access' // change label
-                ],
-                'route' => null, // disable menu
-            ],
+            // 'menus' => [
+            //     'assignment' => [
+            //         'label' => 'Grand Access' // change label
+            //     ],
+            //     'route' => null, // disable menu
+            // ],
            
         ]
        
     ],
+    // "aliases" => [
+    //     "@mdm/admin" => "@vendor/mdmsoft/yii2-admin",
+    // ],
     //'modules' => [],
     'components' => [
          'authManager' => [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
-             //"defaultRoles" => ["guest"],
+             "defaultRoles" => ["guest"],
         ],
         'assetManager' => [
            'bundles' => [
                     'dmstr\web\AdminLteAsset' => [
                         'skin' => 'skin-blue',
                     ],
+              
+                    'yii\web\JqueryAsset' => [  //禁用默认的jquery版本
+                        'sourcePath' => null,
+                        'js' => []
+                    ],
                 ],
-            ],
+        ],
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
@@ -80,19 +88,20 @@ return [
         //         "<controller:\w+>/<action:\w+>"=>"<controller>/<action>"    
         //     ],
         // ],
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+        
+        // 'urlManager' => [
+        //     'enablePrettyUrl' => true,
+        //     'showScriptName' => false,
+        //     'rules' => [
+        //     ],
+        // ],
+        
     ],
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
             'site/*', //一般不禁用无法登出
+            '/*',
             //'admin/*',
             //'gii/*',
             //'debug/*',
