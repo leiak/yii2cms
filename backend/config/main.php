@@ -50,7 +50,9 @@ return [
               
                     'yii\web\JqueryAsset' => [  //禁用默认的jquery版本
                         'sourcePath' => null,
-                        'js' => []
+                        'js' => [
+                             'https://cdn.bootcss.com/jquery/2.2.4/jquery.js',
+                         ]
                     ],
                 ],
         ],

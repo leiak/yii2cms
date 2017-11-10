@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6dcab04de0889aba1bd7085ad35298cc",
-    "content-hash": "8a72e67b6bb0dbfe18e7ce03f04e46b5",
+    "hash": "c7d44296b988adb82f9de007f66a51d0",
+    "content-hash": "b3c2217a5045cb0902d03009a2b6515c",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -93,16 +93,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "3.2.1",
+            "version": "1.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
+                "reference": "1472290917f17af05e98007136096784f9051fab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
-                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/1472290917f17af05e98007136096784f9051fab",
+                "reference": "1472290917f17af05e98007136096784f9051fab",
                 "shasum": null
             },
             "type": "bower-asset",
@@ -2884,7 +2884,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "bower-asset/jquery": 0
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

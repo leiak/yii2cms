@@ -76,12 +76,7 @@
                             
                          ],
                     ],
-                    // [
-                    //    'label' => '文章',
-                    //    'icon' =>'dashboard',
-                    //    'url' => '?r=news/index',
-             
-                    // ],
+                    
                 ],
             ]
         ) ?>
